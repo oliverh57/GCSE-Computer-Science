@@ -1,2 +1,2 @@
-# GCSE-Computer-Sicence-
+# GCSE-Computer-Science
 Python 

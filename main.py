@@ -1,6 +1,7 @@
 # python GCSE computer sicence task
 from utils import *
 from game import *
+from highscore import *
 
 user1NAME = "Bob"  #define user1NAME name var
 user1SCORE = 0
@@ -54,7 +55,7 @@ while user2NAME == False:  #dito as 1
 printlarge("game section")
 printnl()
 
-for i in range(5):
+for i in range(1):
   printlarge("Round " + str(i+1))
   print(user1NAME + " is rolling...\n")
   user1SCORE = calscore(user1SCORE, user1NAME)
@@ -63,4 +64,7 @@ for i in range(5):
   user2SCORE = calscore(user2SCORE, user2NAME)
   input("\npress enter to continute\n")
 
-print("user one score: " + str(user1SCORE) + "\nUser two scores: " + str(user2SCORE))
+printlarge("The Game has ended")
+print(user1NAME + "'s score is " + str(user1SCORE))
+print(user2NAME + "'s score is " + str(user2SCORE))
+
